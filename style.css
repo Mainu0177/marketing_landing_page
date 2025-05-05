@@ -1,0 +1,105 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    line-height: 1.6;
+}
+
+.header{
+    background-color: white;
+    padding: 20px;
+}
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+.logo{
+    font-size: 24px;
+    font-weight: bold;
+    color: rgb(0, 224, 145);
+    cursor: pointer;
+}
+.nav-links{
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+.nav-links a {
+    text-decoration: none;
+    color: black;
+}
+.hero{
+    background-color: rgb(0, 169, 104);
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+.hero-content h1{
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+.hero-content p{
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+.btn{
+    background-color: rgb(32, 111, 77);
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    border: solid white;
+    transition: background-color 0.3s;
+    cursor: pointer;
+    font-size: 16px;
+    text-decoration: none;
+}
+.btn:hover{
+    background-color: rgb(69, 231, 145);
+}
+.features{
+    text-align: center;
+    margin: 40px 0;
+}
+.feature-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: 40px auto;
+}
+.feature-card{
+    box-shadow: 0 2px 5px gray;
+    padding: 20px;
+    border-radius: 6px;
+}
+.feature-card i{
+    font-size: 40px;
+    color: rgb(48, 219, 116);
+    margin-bottom: 10px;
+}
+.download{
+    text-align: center;
+    padding: 40px 20px;
+}
+.download-buttons{
+    margin-top: 20px;
+}
+.footer{
+    color: white;
+    background-color: black;
+    text-align: center;
+    padding: 20px;
+}
+@media (max-width: 760px) {
+    .nav-links{
+        display: none;
+    }
+}
+
+
